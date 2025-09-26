@@ -1,0 +1,113 @@
+/*padrao de fonte*/
+body {
+	background-color: #e0c8ab; /*cor fundo da pagina inteira*/
+	color: #7d391c; /*cor da letra*/
+	margin: 1; /* margens do navegador */
+	padding: 0; /* remove padding padrão do navegador */
+}
+/*Layse Pimenta dos Santos*/
+h1 {
+	text-align: center; /*centraliza o texto*/
+	font-family: 'Arial'; /*fonte da letra*/
+	background-color: #7d391c; /*cor do fundo das letras*/
+	color: #f5f3f0; /*cor da letra*/ 
+	font-size: 50px; /*tamanho da fonte*/
+	margin-bottom: 10px; /* Espaço abaixo do título */
+}
+/*informações pessoais*/
+h4 {
+	text-align: center; /*centraliza o texto*/
+	margin-top: 0px; /* Remove espaço extra acima do texto */
+	font-family: 'holiday'; /*fonte*/
+	font-size: 15px;  /* Tamanho da fonte para detalhes pessoais */
+}
+
+/* titulos principais */
+h3 {
+	font-family: Arial, sans-serif; /* fonte */
+	font-weight: bold; /* negrito */
+	text-transform: uppercase; /* tudo em maiusculo */
+	font-size: 20px;
+	background-color: #7d391c;
+	color: #f5f3f0;
+	border-radius: 20px;
+	display: inline;
+	padding: 5px 5px;
+}
+
+/* paragrafos */
+p {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+
+/*listas*/
+ul {
+	list-style-type: disc; /*tipo circulo preenchido*/
+	font-size: Arial, sans-serif;
+	font-size: 18px;
+}
+
+/*traco*/
+ hr {
+ 	border: 0px; /*remove a borda padrão*/
+ 	border-top: 1px solid black; /*grossura, forma e cor da linha*/
+ }
+
+/*imagemprincipal*/
+.imagemprincipal {
+	background: url("imagens/fotoprincipal/fotoprincipal.png") center/ cover no-repeat; /*imagem*/
+    /*center, e nao duplica*/
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; /*itens centralizados*/
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+
+/*titulo para o texto "fotos e videos"*/
+.fotosevideos {
+	color: black; /*cor da letra*/
+	background-color: white; /*cor do fundo*/
+	text-align: center; /*centraliza o texto*/
+}
+
+/*estrutura da imagem adicionada*/
+.imagemadicionada img {
+	width: 300px; /*largura*/
+	height: 300px; /*altura*/
+	object-fit: cover; /*ajusta sem distorcer*/
+	border-radius: 8px; /*borda arredondada*/
+	box-shadow: 0px 0px 15px; /*efeito de sombra*/
+}
+.imagemadicionada {
+	display: flex; /* Flexbox para alinhar as imagens */
+	flex-wrap: wrap; /* Permite que as imagens quebrem linha quando necessário */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 10px; /* Espaçamento entre imagens */
+    padding: 10px; /*Espaçamento interno*/
+}
+/*efeito de expandir a imagem*/
+.efeito img:hover {
+	transform: scale(1.50); /* Aumenta a imagem quando o mouse passa por cima */
+	z-index: 2; /* Mantém a imagem por cima das outras */
+	transition: transform 0.10s ease; /*faz a imagem crescer em forma suave*/
+	cursor: pointer; /*cursor de maozinha*/
+}
+/*links*/
+a {
+	color: #7d391c;
+}
+/*rodape*/
+footer {
+	text-align: center; /*centralizar o texto*/
+	padding: 1rem; /*espaço interno acima e baixo*/
+	background-color: #7d391c; /*cor do fundo*/
+	color: #f5f3f0; /*cor da letra*/
+	margin-top: 1rem;
+	font-size: 0.9rem;
+}
